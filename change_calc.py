@@ -17,12 +17,12 @@ class change_calculater:
         currency_type=""
         if '$' in self.presented_amount:
             currency_type="Dollars"
-            pr_amount=int(self.presented_amount.replace("$",""))
-            prod_amt=int(self.product_price.replace("$",""))
+            pr_amount=float(self.presented_amount.replace("$",""))
+            prod_amt=float(self.product_price.replace("$",""))
         elif 'Rs' or 'rs' in self.presented_amount:
             currency_type="Rupees"
-            pr_amount=int(self.presented_amount.replace("Rs",""))
-            prod_amt=int(self.product_price.replace("Rs",""))
+            pr_amount=float(self.presented_amount.replace("Rs",""))
+            prod_amt=float(self.product_price.replace("Rs",""))
         else:
             return "Coming soon"
         settings={}
