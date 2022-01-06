@@ -5,22 +5,8 @@ class change_calculater:
         self.presented_amount=presented_amount
         self.product_price=product_price
         self.denom={"Dollars":{"Denomination":
-    ["1¢",
-        "5¢",
-        "10¢",
-        "25¢",
-        "50¢",
-        "$1",
-        "$2",
-        "$5",
-        "$10",
-        "$20",
-        "$50",
-        "$100",
-        "$200"],
-    "Convertor":{"$":100,"¢":1},
-    "minimum_currency":"¢",
-              "min_val":1
+    ["1¢","5¢","10¢","25¢","50¢","$1","$2","$5","$10","$20","$50","$100","$200"],
+    "Convertor":{"$":100,"¢":1},"minimum_currency":"¢","min_val":1
               
               }
 }
